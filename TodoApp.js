@@ -31,12 +31,13 @@ while (condition) {
         console.log(todo);
     }
     else {
-        let getexit = await inquirer.prompt({
-            name: "exit",
-            message: "Don't you want to continue? press n :",
-            type: "confirm",
-            default: "true",
-        });
-        condition = getexit.exit;
+        break;
+        // let getexit = await inquirer.prompt({
+        //   name: "exit",
+        //   message: "Don't you want to continue? press n :",
+        //   type: "confirm",
+        //   default: "true",
+        // });
+        // condition = getexit.exit;
     }
 }
